@@ -7,7 +7,6 @@ import { logo, menu, close } from '../assets';
 const Navbar = () => {
   const [active, setActive] = useState('´');
   const [toggle, setToggle] = useState(false);
-  console.log("navlinks", navLinks);
 
   const [scrolled, setScrolled] = useState(false);
 
@@ -44,7 +43,7 @@ const Navbar = () => {
       >
         <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
         <p className='text-white text-[18px] font-bold cursor-pointer flex'>
-          Gabriely <span className='sm:block hidden'> | Developer</span>
+          Gabriely &nbsp; <span className='sm:block hidden'> | &nbsp; Developer</span>
         </p>
       </Link>
 
